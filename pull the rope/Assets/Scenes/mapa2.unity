@@ -717,6 +717,7 @@ GameObject:
   - component: {fileID: 1098803296}
   - component: {fileID: 1098803295}
   - component: {fileID: 1098803294}
+  - component: {fileID: 1098803298}
   m_Layer: 0
   m_Name: cuerda
   m_TagString: Untagged
@@ -804,6 +805,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1098803298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1098803293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a80cac87ac3e18944a78f9da83d37be5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1257639940
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +905,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1303426284}
+  - component: {fileID: 1303426283}
+  - component: {fileID: 1303426285}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -900,6 +914,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1303426283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1303426282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03866a5caacf9d149b8ac29f424d6e76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1303426284
 Transform:
   m_ObjectHideFlags: 0
@@ -913,6 +938,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1303426285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1303426282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c43a563ee8bf1964bb719c3a282a33c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1429399250
 GameObject:
   m_ObjectHideFlags: 0

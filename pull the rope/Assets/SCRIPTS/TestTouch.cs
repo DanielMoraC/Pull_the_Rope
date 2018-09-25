@@ -7,12 +7,11 @@ public class TestTouch : MonoBehaviour {
     Touch myTouch;
     Touch[] myTouches;
 
-    public GameObject Rope;
 
     // Use this for initialization
     void Start () {
-		
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -20,15 +19,18 @@ public class TestTouch : MonoBehaviour {
 
         for(int i = 0; i < Input.touchCount; i++)
         {
-            if (myTouch.position.x < 0)
+            if (myTouch.position.x < 0 && transform.position.x > -5)
             {
+                transform.Translate(-0.1f,0,0);
+
                 Debug.Log("Hola");
             }
-            if (myTouch.position.x > 0)
+            if (myTouch.position.x > 0 && transform.position.x < 5)
             {
+                transform.Translate(+0.1f, 0, 0);
+
                 Debug.Log("Adios");
             }
-            Debug.Log("hufhskfhkshfos");
         }
 	}
 }

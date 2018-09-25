@@ -641,6 +641,7 @@ GameObject:
   - component: {fileID: 1201308841}
   - component: {fileID: 1201308844}
   - component: {fileID: 1201308843}
+  - component: {fileID: 1201308845}
   m_Layer: 0
   m_Name: cuerda
   m_TagString: Untagged
@@ -701,7 +702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Winner1: {fileID: 1526950211}
   Winner2: {fileID: 1224212036}
-  mapa: 1
+  mapa: 0
   Iz: 0
   De: 0
 --- !u!50 &1201308844
@@ -724,6 +725,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 2
+--- !u!114 &1201308845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201308840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a80cac87ac3e18944a78f9da83d37be5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1224212036
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,7 +1017,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2111717733}
   - component: {fileID: 2111717732}
-  - component: {fileID: 2111717734}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1037,15 +1048,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2111717734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2111717731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a80cac87ac3e18944a78f9da83d37be5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Rope: {fileID: 1201308840}

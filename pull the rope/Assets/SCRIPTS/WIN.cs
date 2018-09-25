@@ -8,15 +8,18 @@ public class WIN : MonoBehaviour {
     public GameObject Winner1;
     public GameObject Winner2;
 
-    public int mapa=1;
+    public int mapa=0;
+    
+    public int Iz = 0;
+    public int De = 0;
 
-    public bool Iz = false;
-    public bool De = false;
-
+    
     // Use this for initialization
     void Start () {
-        PlayerPrefs.GetInt("IZ");
-	}
+        Iz = PlayerPrefs.GetInt("Izq");
+        De = PlayerPrefs.GetInt("Der");
+        mapa = PlayerPrefs.GetInt("Map");
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -25,59 +28,65 @@ public class WIN : MonoBehaviour {
 
     private void OnTriggerStay2D(Collider2D col)
     {
-        if (mapa == 1) {
-            if (col.gameObject.tag == "finali" && !Iz)
+        if (mapa == 0) {
+            if (col.gameObject.tag == "finali" && Iz == 0)
             {
                 SceneManager.LoadScene("mapa2");
                 mapa++;
-                Iz = true;
-                //Debug.Log("hola");
+                PlayerPrefs.GetInt("Map",mapa);
+                Iz = 1;
+                PlayerPrefs.SetInt("Izq", Iz);
 
             }
-            if (col.gameObject.tag == "finald" && !De)
+            if (col.gameObject.tag == "finald" && De == 0)
             {
                 SceneManager.LoadScene("mapa2");
                 mapa++;
-                De = true;
-                PlayerPrefs.SetInt("IZ", 1);
-                //Debug.Log("Adios");
+                PlayerPrefs.GetInt("Map", mapa);
+                De = 1;
+                PlayerPrefs.SetInt("Der", De);
+            }
+        }
+        if (mapa == 1)
+        {
+            if (col.gameObject.tag == "finali" && Iz == 1)
+            {
+                SceneManager.LoadScene("WIN");
+                PlayerPrefs.DeleteAll();
+            }
+            else if (col.gameObject.tag == "finali" && Iz == 0)
+            {
+                SceneManager.LoadScene("mapa3");
+                mapa++;
+                PlayerPrefs.GetInt("Map", mapa);
+                Iz = 1;
+                PlayerPrefs.SetInt("Izq", Iz);
+            }
+            if (col.gameObject.tag == "finald" && De == 1)
+            {
+                SceneManager.LoadScene("WIN");
+                PlayerPrefs.DeleteAll();
+            }
+            else if (col.gameObject.tag == "finali" && De == 0)
+            {
+                SceneManager.LoadScene("mapa3");
+                mapa++;
+                PlayerPrefs.GetInt("Map", mapa);
+                De = 1;
+                PlayerPrefs.SetInt("Der", De);
             }
         }
         if (mapa == 2)
         {
-            if (col.gameObject.tag == "finali" && Iz)
+            if (col.gameObject.tag == "finali" && Iz == 1)
             {
                 SceneManager.LoadScene("WIN");
-
+                PlayerPrefs.DeleteAll();
             }
-            else if (col.gameObject.tag == "finali" && !Iz)
-            {
-                SceneManager.LoadScene("mapa3");
-                mapa++;
-                Iz = true;
-                //Debug.Log("Adios");
-            }
-            if (col.gameObject.tag == "finald" && De)
+            if (col.gameObject.tag == "finald" && De == 1)
             {
                 SceneManager.LoadScene("WIN");
-            }
-            else if (col.gameObject.tag == "finali" && !De)
-            {
-                SceneManager.LoadScene("mapa3");
-                mapa++;
-                De = true;
-                //Debug.Log("Adios");
-            }
-        }
-        if (mapa == 3)
-        {
-            if (col.gameObject.tag == "finali" && Iz)
-            {
-                SceneManager.LoadScene("WIN");
-            }
-            if (col.gameObject.tag == "finald" && De)
-            {
-                SceneManager.LoadScene("WIN");
+                PlayerPrefs.DeleteAll();
             }
         }
     }
