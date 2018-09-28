@@ -7,6 +7,7 @@ public class WIN : MonoBehaviour {
 
     public GameObject Winner1;
     public GameObject Winner2;
+    public GameObject Won;
 
     public int mapa=0;
     
@@ -18,7 +19,7 @@ public class WIN : MonoBehaviour {
     void Start () {
         Iz = PlayerPrefs.GetInt("Izq");
         De = PlayerPrefs.GetInt("Der");
-        mapa = PlayerPrefs.GetInt("Map");
+        //mapa = PlayerPrefs.GetInt("Map");
     }
 	
 	// Update is called once per frame
@@ -36,7 +37,6 @@ public class WIN : MonoBehaviour {
                 PlayerPrefs.GetInt("Map",mapa);
                 Iz = 1;
                 PlayerPrefs.SetInt("Izq", Iz);
-
             }
             if (col.gameObject.tag == "finald" && De == 0)
             {
@@ -51,7 +51,7 @@ public class WIN : MonoBehaviour {
         {
             if (col.gameObject.tag == "finali" && Iz == 1)
             {
-                SceneManager.LoadScene("WIN");
+                Won.SetActive(true);
                 PlayerPrefs.DeleteAll();
             }
             else if (col.gameObject.tag == "finali" && Iz == 0)
@@ -64,7 +64,7 @@ public class WIN : MonoBehaviour {
             }
             if (col.gameObject.tag == "finald" && De == 1)
             {
-                SceneManager.LoadScene("WIN");
+                Won.SetActive(true);
                 PlayerPrefs.DeleteAll();
             }
             else if (col.gameObject.tag == "finali" && De == 0)
@@ -80,12 +80,12 @@ public class WIN : MonoBehaviour {
         {
             if (col.gameObject.tag == "finali" && Iz == 1)
             {
-                SceneManager.LoadScene("WIN");
+                Won.SetActive(true);
                 PlayerPrefs.DeleteAll();
             }
             if (col.gameObject.tag == "finald" && De == 1)
             {
-                SceneManager.LoadScene("WIN");
+                Won.SetActive(true);
                 PlayerPrefs.DeleteAll();
             }
         }

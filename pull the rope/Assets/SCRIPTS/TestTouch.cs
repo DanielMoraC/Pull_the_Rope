@@ -23,13 +23,13 @@ public class TestTouch : MonoBehaviour {
             {
                 transform.Translate(-0.1f,0,0);
 
-                Debug.Log("Hola");
+                //Debug.Log("Hola");
             }
             if (myTouch.position.x > 0 && transform.position.x < 5)
             {
                 transform.Translate(+0.1f, 0, 0);
 
-                Debug.Log("Adios");
+                //Debug.Log("Adios");
             }
         }
 	}

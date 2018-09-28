@@ -19,6 +19,14 @@ public class MENU : MonoBehaviour {
     {
         SceneManager.LoadScene("SampleScene");
     }
+    public void Puntuaciones()
+    {
+        SceneManager.LoadScene("Scores");
+    }
+    public void Volver()
+    {
+        SceneManager.LoadScene("Menu");
+    }
     public void QuitGame()
     {
         Application.Quit();
