@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 0faf80af03bd8f54b8b09b0614ba4497
+timeCreated: 1538234978
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Head_1
@@ -12,8 +14,7 @@ TextureImporter:
     21300014: Arm_Front
     21300016: Hand_Back
     21300018: Hand_Front
-  externalObjects: {}
-  serializedVersion: 5
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -21,8 +22,6 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
-    mipMapsPreserveCoverage: 0
-    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -38,13 +37,10 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    serializedVersion: 2
     filterMode: -1
     aniso: -1
     mipBias: -1
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapMode: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -53,85 +49,65 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
-  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
-    buildTarget: DefaultTexturePlatform
+  - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Standalone
+  - buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: iPhone
+  - buildTarget: iPhone
     maxTextureSize: 2048
-    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Android
+  - buildTarget: Android
     maxTextureSize: 2048
-    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Windows Store Apps
+  - buildTarget: Windows Store Apps
     maxTextureSize: 2048
-    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: WebGL
+  - buildTarget: WebGL
     maxTextureSize: 2048
-    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -147,54 +123,33 @@ TextureImporter:
       pivot: {x: 0.50017196, y: 0.50077665}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 889edc0ae71003f4181c5d9a82b207bd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Leg
       rect:
         serializedVersion: 2
-        x: 702.3819
-        y: 689.1032
-        width: 342.38483
-        height: 809.06647
+        x: 703.06274
+        y: 689.93494
+        width: 342.38477
+        height: 809.0664
       alignment: 9
-      pivot: {x: 0.5012433, y: 0.49983138}
+      pivot: {x: 0.49925485, y: 0.4988034}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: ab5a1822655cae745bcaaeaa1c6ea2bc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Arm_Back
       rect:
         serializedVersion: 2
-        x: 1171.8545
+        x: 1169.1927
         y: 1326.0273
-        width: 299.85742
+        width: 302.51917
         height: 701.6289
       alignment: 9
-      pivot: {x: 0.4973881, y: 0.49951267}
+      pivot: {x: 0.5018104, y: 0.49951267}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: d2404b6560f44af4199f2cb6299a6c84
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Head_2
       rect:
@@ -207,14 +162,7 @@ TextureImporter:
       pivot: {x: 0.50059104, y: 0.49919856}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 89a27505b3515d24586aa528de74eeca
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Torso_1
       rect:
@@ -227,14 +175,7 @@ TextureImporter:
       pivot: {x: 0.49850675, y: 0.49935699}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 28a9128495254524da6deade3b1e4df3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Shoe
       rect:
@@ -247,14 +188,7 @@ TextureImporter:
       pivot: {x: 0.49538594, y: 0.49965614}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 21791edb9a873b749a8ed4b75c8839a0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Torso_2
       rect:
@@ -267,14 +201,7 @@ TextureImporter:
       pivot: {x: 0.49803075, y: 0.49914134}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 7d94932b250c0c6438bbb63cbceb98fa
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Arm_Front
       rect:
@@ -287,14 +214,7 @@ TextureImporter:
       pivot: {x: 0.49999258, y: 0.50026107}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: f25435231bef9c848bfa58c2cf1732b7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Hand_Back
       rect:
@@ -307,14 +227,7 @@ TextureImporter:
       pivot: {x: 0.49336764, y: 0.48928964}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: ab78915886f9bbb4dabf88b99ab13870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Hand_Front
       rect:
@@ -327,23 +240,9 @@ TextureImporter:
       pivot: {x: 0.49355638, y: 0.49411502}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 9d59a7028e6e06c4eb923c911e288664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
-    physicsShape: []
-    bones: []
-    spriteID: 88e7b23e63f9ed64e94652b730fa2bfe
-    vertices: []
-    indices: 
-    edges: []
-    weights: []
   spritePackingTag: 
-  userData: 636737165731944876
+  userData: 100809765828244
   assetBundleName: 
   assetBundleVariant: 
