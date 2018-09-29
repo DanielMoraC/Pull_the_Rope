@@ -14,6 +14,7 @@ public class TestTouch : MonoBehaviour {
     }
 	
 	// Update is called once per frame
+    /*
 	void Update () {
         myTouch = Input.GetTouch(0);
 
@@ -22,15 +23,23 @@ public class TestTouch : MonoBehaviour {
             if (myTouch.position.x < 0 && transform.position.x > -5)
             {
                 transform.Translate(-0.1f,0,0);
-
                 //Debug.Log("Hola");
             }
             if (myTouch.position.x > 0 && transform.position.x < 5)
             {
                 transform.Translate(+0.1f, 0, 0);
-
                 //Debug.Log("Adios");
             }
         }
-	}
+	}*/
+    public void MoverI()
+    {
+        transform.Translate(-0.5f, 0, 0);
+        Debug.Log("Adios");
+    }
+    public void MoverD()
+    {
+        transform.Translate(+0.5f, 0, 0);
+        Debug.Log("Hola");
+    }
 }

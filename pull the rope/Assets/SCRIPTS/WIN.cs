@@ -26,6 +26,11 @@ public class WIN : MonoBehaviour {
 	void Update () {
 		
 	}
+    public void Borrar()
+    {
+        //PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteKey("Izq");
+    }
 
     private void OnTriggerStay2D(Collider2D col)
     {
@@ -52,7 +57,7 @@ public class WIN : MonoBehaviour {
             if (col.gameObject.tag == "finali" && Iz == 1)
             {
                 Won.SetActive(true);
-                PlayerPrefs.DeleteAll();
+                //PlayerPrefs.DeleteAll();
             }
             else if (col.gameObject.tag == "finali" && Iz == 0)
             {
@@ -65,7 +70,7 @@ public class WIN : MonoBehaviour {
             if (col.gameObject.tag == "finald" && De == 1)
             {
                 Won.SetActive(true);
-                PlayerPrefs.DeleteAll();
+                //PlayerPrefs.DeleteAll();
             }
             else if (col.gameObject.tag == "finali" && De == 0)
             {
@@ -81,12 +86,12 @@ public class WIN : MonoBehaviour {
             if (col.gameObject.tag == "finali" && Iz == 1)
             {
                 Won.SetActive(true);
-                PlayerPrefs.DeleteAll();
+                //PlayerPrefs.DeleteAll();
             }
             if (col.gameObject.tag == "finald" && De == 1)
             {
                 Won.SetActive(true);
-                PlayerPrefs.DeleteAll();
+                //PlayerPrefs.DeleteAll();
             }
         }
     }
