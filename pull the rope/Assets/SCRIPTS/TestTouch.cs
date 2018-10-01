@@ -49,25 +49,28 @@ public class TestTouch : MonoBehaviour {
         {
             dobleI.SetActive(true);
         }
-
-
+        #region MOVER
         /*
-        myTouch = Input.GetTouch(0);
+        if (Input.touchCount > 0){
+            myTouch = Input.GetTouch(0);
+            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(myTouch.position);
+            touchPosition.z = 0f;
 
-        for(int i = 0; i < Input.touchCount; i++)
-        {
-            if (myTouch.position.x < 0 && transform.position.x > -5)
+            if (touchPosition.x < 0)
             {
-                transform.Translate(-0.1f,0,0);
-                //Debug.Log("Hola");
+                transform.Translate(-0.5f, 0, 0);
+                Debug.Log("Hola");
             }
-            if (myTouch.position.x > 0 && transform.position.x < 5)
+            if (touchPosition.x > 0)
             {
-                transform.Translate(+0.1f, 0, 0);
-                //Debug.Log("Adios");
+                transform.Translate(0.5f, 0, 0);
+                Debug.Log("Adios");
             }
         }*/
+        #endregion MOVER       
     }
+    #region MOVERBOTONES
+
     public void MoverI()
     {
         if (puntosI == 1)
@@ -78,7 +81,6 @@ public class TestTouch : MonoBehaviour {
             transform.Translate(-1f, 0, 0);
         }
         
-        //Debug.Log("Adios");
         toquesI += puntosI;
     }
     public void MoverD()
@@ -91,10 +93,11 @@ public class TestTouch : MonoBehaviour {
         {
             transform.Translate(+1f, 0, 0);
         }
-        //Debug.Log("Hola");
         toquesD += puntosD;
     }
+    #endregion MOVERBOTONES
 
+    #region FREEZ
     public void FreezeI()
     {
         posibleI = true;
@@ -120,7 +123,9 @@ public class TestTouch : MonoBehaviour {
         yield return new WaitForSeconds(seconds);
         botonI.SetActive(true);
     }
+    #endregion FREEZ
 
+    #region MULTIPLICADOR
     public void MultiplicadorI()
     {
         posibleI = false;
@@ -144,4 +149,5 @@ public class TestTouch : MonoBehaviour {
         puntosD = 2;
         yield return new WaitForSeconds(seconds);
     }
+    #endregion MULTIPLICADOR
 }
