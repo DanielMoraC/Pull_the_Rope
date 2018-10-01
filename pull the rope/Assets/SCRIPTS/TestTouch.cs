@@ -36,7 +36,7 @@ public class TestTouch : MonoBehaviour {
         if (toquesD == 10)
         {
             congelarD.SetActive(true);
-        } else if(toquesD == 20 && posibleD)
+        } else if(toquesD >= 20 && posibleD)
         {
             dobleD.SetActive(true);
         }
@@ -45,7 +45,7 @@ public class TestTouch : MonoBehaviour {
         {
             congelarI.SetActive(true);
         }
-        else if (toquesI == 20 && posibleI)
+        else if (toquesI >= 20 && posibleI)
         {
             dobleI.SetActive(true);
         }
