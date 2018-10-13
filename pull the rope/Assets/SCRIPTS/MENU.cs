@@ -33,6 +33,6 @@ public class MENU : MonoBehaviour {
     public void QuitGame()
     {
         Application.Quit();
-
     }
+    
 }

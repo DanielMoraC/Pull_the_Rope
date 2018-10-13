@@ -59,12 +59,43 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\animaciones\Anima2D\Examples\Scripts\CharacterMotion.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Examples\Scripts\Follow.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Examples\Scripts\SkinnedMeshCombiner.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Examples\Scripts\SpringBone.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Examples\Scripts\SpringCollider.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Examples\Scripts\SpringManager.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Examples\Scripts\SpriteCycle.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Examples\Scripts\SpriteCycleParallax.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Scripts\Bone2D.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Scripts\Control.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Scripts\EditorUpdaterProxy.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Scripts\Ik2D.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Scripts\IkCCD2D.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Scripts\IkGroup.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Scripts\IkLimb2D.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Scripts\IkSolver2D.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Scripts\IkSolver2DCCD.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Scripts\IkSolver2DLimb.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Scripts\MathUtils.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Scripts\Pose.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Scripts\PoseManager.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Scripts\SpriteMesh.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Scripts\SpriteMeshAnimation.cs" />
+    <Compile Include="Assets\animaciones\Anima2D\Scripts\SpriteMeshInstance.cs" />
     <Compile Include="Assets\SCRIPTS\Continue.cs" />
     <Compile Include="Assets\SCRIPTS\MENU.cs" />
     <Compile Include="Assets\SCRIPTS\PauseMenu.cs" />
     <Compile Include="Assets\SCRIPTS\TestTouch.cs" />
     <Compile Include="Assets\SCRIPTS\Timer.cs" />
     <Compile Include="Assets\SCRIPTS\WIN.cs" />
+    <None Include="Assets\animaciones\Anima2D\Examples\Shaders\VisibleInsideMask.shader" />
+    <None Include="Assets\animaciones\Anima2D\Examples\Shaders\VisibleOutsideMask.shader" />
+    <None Include="Assets\animaciones\Anima2D\Version.txt" />
+    <None Include="Assets\animaciones\Anima2D\Examples\Shaders\Unlit-Alpha-Cull-off.shader" />
+    <None Include="Assets\animaciones\Anima2D\Licenses.txt" />
+    <None Include="Assets\animaciones\Anima2D\Examples\Shaders\VertexLitOneDirectional.shader" />
+    <None Include="Assets\animaciones\Anima2D\Readme.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Usuario/Documents/GitHub/Pull_the_Rope/pull the rope/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
