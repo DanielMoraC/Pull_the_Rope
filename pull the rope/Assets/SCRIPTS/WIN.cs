@@ -55,7 +55,7 @@ public class WIN : MonoBehaviour {
         if (col.gameObject.tag == "finali")
         {
             continua = false;
-            if (PlayerPrefs.GetFloat("Segundos") > seconds)
+            if (PlayerPrefs.GetFloat("Segundos") < seconds)
             {
                 PlayerPrefs.SetFloat("Segundos", seconds);
             }
@@ -64,7 +64,7 @@ public class WIN : MonoBehaviour {
         if (col.gameObject.tag == "finald")
         {
             continua = false;
-            if (PlayerPrefs.GetFloat("Segundos") > seconds)
+            if (PlayerPrefs.GetFloat("Segundos") < seconds)
             {
                 PlayerPrefs.SetFloat("Segundos", seconds);
             }
