@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pull the rope", "Assembly-CSharp.csproj", "{5C5C040C-7F68-922C-B903-37F8BCCA94CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{5C5C040C-7F68-922C-B903-37F8BCCA94CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pull the rope", "Assembly-CSharp-Editor.csproj", "{191A5E3F-DECA-BA9E-FDC2-EF6B869D0081}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{191A5E3F-DECA-BA9E-FDC2-EF6B869D0081}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

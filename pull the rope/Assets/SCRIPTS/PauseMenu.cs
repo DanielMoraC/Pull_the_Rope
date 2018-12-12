@@ -7,24 +7,13 @@ public class PauseMenu : MonoBehaviour {
 
     public GameObject Pause;
 
+	//Activate or deactivate the pause menu
     public void TogglePause()
     {
-       
         Pause.SetActive(true);
     }
     public void Volver()
-    {
-        
+    {        
         Pause.SetActive(false);
-    }
-    
-    public void ToMenu ()
-    {
-        SceneManager.LoadScene("Menu");
-    }
-	
-    public void Quit()
-    {
-        Application.Quit();
     }
 }

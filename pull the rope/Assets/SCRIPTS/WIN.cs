@@ -23,14 +23,6 @@ public class WIN : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        /*mapa = 0;
-        Iz = 0;
-        De = 0;
-        print("Mapa2 = " + PlayerPrefs.GetInt("Map"));
-        Iz = PlayerPrefs.GetInt("Izq");
-        De = PlayerPrefs.GetInt("Der");
-        mapa = PlayerPrefs.GetInt("Map");
-        print("Mapa3 = " + PlayerPrefs.GetInt("Map"));*/
 
         PlayerPrefs.GetFloat("Segundos");
         continua = true;
@@ -38,20 +30,20 @@ public class WIN : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        #region timer
+
+		//Timer
         if (continua)
         {
             seconds = seconds + 1 * Time.deltaTime;
             timertext.text = "" + seconds.ToString("0");
         }
-        #endregion timer
     }
 
 
     private void OnTriggerEnter2D(Collider2D col)
     {
 
-
+		//If the rope touch the a player it wins and if he wins in less time than the highscore it changes
         if (col.gameObject.tag == "finali")
         {
             continua = false;
@@ -70,107 +62,6 @@ public class WIN : MonoBehaviour {
             }
             Won.SetActive(true);
         }
-
-        #region mapa1
-
-        /*
-        if (mapa == 0) {
-            if (col.gameObject.tag == "finali" && Iz == 0)
-            {
-                mapa = 1;
-                Iz = 1;
-                PlayerPrefs.SetInt("Map", mapa);
-                PlayerPrefs.SetInt("Izq", Iz);
-                PlayerPrefs.SetInt("Der", De);
-                print("Mapa = " + PlayerPrefs.GetInt("Map"));
-                SceneManager.LoadScene("mapa2");
-                
-            }
-            if (col.gameObject.tag == "finald" && De == 0)
-            {
-                mapa = 1; 
-                De = 1;
-                PlayerPrefs.SetInt("Map", mapa);
-                PlayerPrefs.SetInt("Izq", Iz);
-                PlayerPrefs.SetInt("Der", De);
-                print("Mapa = " + PlayerPrefs.GetInt("Map"));
-                SceneManager.LoadScene("mapa2");
-                
-            }
-        }*/
-
-        #endregion mapa1
-
-
-        #region mapas
-        /*
-        if (mapa == 1)
-        {
-            if (col.gameObject.tag == "finali" && Iz == 1)
-            {
-                Won.SetActive(true);
-                mapa = 0;
-                De = 0;
-                Iz = 0;
-                PlayerPrefs.SetInt("Map", mapa);
-                PlayerPrefs.SetInt("Izq", Iz);
-                PlayerPrefs.SetInt("Der", De);
-            }
-            else if (col.gameObject.tag == "finali" && Iz == 0)
-            {
-                
-                mapa=2;
-                Iz = 1;
-                PlayerPrefs.SetInt("Map", mapa);
-                PlayerPrefs.SetInt("Izq", Iz);
-                PlayerPrefs.SetInt("Der", De);
-                SceneManager.LoadScene("mapa3");
-            }
-            if (col.gameObject.tag == "finald" && De == 1)
-            {
-                Won.SetActive(true);
-                mapa = 0;
-                De = 0;
-                Iz = 0;
-                PlayerPrefs.SetInt("Map", mapa);
-                PlayerPrefs.SetInt("Izq", Iz);
-                PlayerPrefs.SetInt("Der", De);
-            }
-            else if (col.gameObject.tag == "finald" && De == 0)
-            {
-                
-                mapa =2;
-                De = 1;
-                PlayerPrefs.SetInt("Map", mapa);
-                PlayerPrefs.SetInt("Izq", Iz);
-                PlayerPrefs.SetInt("Der", De);
-                SceneManager.LoadScene("mapa3");
-            }
-        }
-        if (mapa == 2)
-        {
-            if (col.gameObject.tag == "finali" && Iz == 1)
-            {
-                Won.SetActive(true);
-                mapa = 0;
-                De = 0;
-                Iz = 0;
-                PlayerPrefs.SetInt("Map", mapa);
-                PlayerPrefs.SetInt("Izq", Iz);
-                PlayerPrefs.SetInt("Der", De);
-            }
-            if (col.gameObject.tag == "finald" && De == 1)
-            {
-                Won.SetActive(true);
-                mapa = 0;
-                De = 0;
-                Iz = 0;
-                PlayerPrefs.SetInt("Map", mapa);
-                PlayerPrefs.SetInt("Izq", Iz);
-                PlayerPrefs.SetInt("Der", De);
-            }
-        }*/
-        #endregion mapas
 
     }
 

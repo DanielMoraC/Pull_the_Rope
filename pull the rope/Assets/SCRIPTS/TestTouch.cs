@@ -33,6 +33,7 @@ public class TestTouch : MonoBehaviour {
 
     void Update() {
 
+		//Activate the skills
         if (toquesD == 10)
         {
             congelarD.SetActive(true);
@@ -48,29 +49,11 @@ public class TestTouch : MonoBehaviour {
         else if (toquesI >= 20 && posibleI)
         {
             dobleI.SetActive(true);
-        }
-        #region MOVER
-        /*
-        if (Input.touchCount > 0){
-            myTouch = Input.GetTouch(0);
-            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(myTouch.position);
-            touchPosition.z = 0f;
-
-            if (touchPosition.x < 0)
-            {
-                transform.Translate(-0.5f, 0, 0);
-                Debug.Log("Hola");
-            }
-            if (touchPosition.x > 0)
-            {
-                transform.Translate(0.5f, 0, 0);
-                Debug.Log("Adios");
-            }
-        }*/
-        #endregion MOVER       
+        }      
     }
     #region MOVERBOTONES
 
+	//Move the rope when the players touch the screen
     public void MoverI()
     {
         if (puntosI == 1)
@@ -98,6 +81,8 @@ public class TestTouch : MonoBehaviour {
     #endregion MOVERBOTONES
 
     #region FREEZ
+
+	//Freez the other player so he cant play for a while
     public void FreezeI()
     {
         posibleI = true;
@@ -126,6 +111,8 @@ public class TestTouch : MonoBehaviour {
     #endregion FREEZ
 
     #region MULTIPLICADOR
+
+	//Make the touchs count double
     public void MultiplicadorI()
     {
         posibleI = false;
